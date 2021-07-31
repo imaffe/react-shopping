@@ -90,7 +90,7 @@ const NotFound = lazy(() => import("./pages/other/NotFound"));
 
 const App = props => {
   useEffect(() => {
-    props.dispatch(
+    props.dispatch(  // dispatch is a Redux concept
       loadLanguages({
         languages: {
           en: require("./translations/english.json"),
